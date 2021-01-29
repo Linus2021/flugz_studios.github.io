@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body  {
+  background-color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+  flex:3;
+  
+}
+
+/* Style the header */
+.header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+/* Style the top navigation bar */
+
+/* Container for flexboxes */
+.section {
+  display: -webkit-flex;
+  display: flex;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+ 
+}
+@media (min-width: 32em)  {
+
+
+.column {
+  float: right;
+    width: 12em;
+	background-color: green;
+
+  
+}
+.column2 {
+ float: left;
+    width: 15em;
+  
+}
+@media (min-width: 45em)  {
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+
+/* Style the content */
+.article {
+  text-align: center;
+  float:center;
+  height: auto;
+   max-width: 100%;
+  background-color: white;
+  padding: 5px;
+  
+}
+
+
+/* Style the footer */
+.footer {
+  background-color: #777;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  
+}
+hr{
+	background-color: black;
+  padding: 20px;
+  text-align: center;
+  color: white;
+	
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+  
+
+
+.submite{
+ background-color: #666;
+  border: 100;
+  color: white;
+  padding: 13px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+	
+}
+.bild {
+    max-width: 100%;
+    height: auto;
+}
